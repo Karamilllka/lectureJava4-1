@@ -8,7 +8,7 @@ class ProductRepositoryTest {
     Product third = new Product(21321, "third", 3200);
 
     @Test
-    public void removeByIdNotFond() {
+    public void shouldRemoveByIdNotFound() {
         ProductRepository repo = new ProductRepository();
         repo.save(first);
         repo.save(second);
@@ -18,7 +18,7 @@ class ProductRepositoryTest {
     }
 
     @Test
-    public void removeById() {
+    public void shouldRemoveById() {
         ProductRepository repo = new ProductRepository();
         repo.save(first);
         repo.save(second);
